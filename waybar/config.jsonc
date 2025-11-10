@@ -1,0 +1,39 @@
+{
+    "layer": "left",
+
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+        // "custom/settings",
+        // "group/quicklinks",
+        "hyprland/window"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        // "custom/updates",
+         "pulseaudio",
+         //"bluetooth",
+         "battery", 
+         "network",
+        // "group/hardware",
+        // "custom/cliphist",
+        // "custom/hypridle",
+        // "custom/hyprshade",
+         "tray",
+        // "custom/exit",
+        // "custom/ml4w-welcome",
+        "clock",
+        "network"
+    ]
+}

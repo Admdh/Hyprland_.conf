@@ -1,0 +1,103 @@
+@import "/home/adam/.cache/wal/colors-waybar.css";
+
+@define-color backgroundAlpha alpha(@background, 0.9);
+@define-color backgroundMain rgba(20,20,20,0.8);
+@define-color backgroundSecondary @color5;
+@define-color textMain @color5;
+@define-color selected @color3;
+
+
+*{
+color: whitesmoke;
+border: none;
+outline: none;
+box-shadow: none;
+}
+
+window {
+    color: @color6;
+    background: none;
+    border: none;
+}
+
+#outer-box {
+    margin: 0px;
+    border-radius: 20px;
+    background-color: @backgroundMain;
+}
+
+#inner-box {
+    margin: 4px;
+    font-weight: bold;
+    /* background-color: red; */
+    border-radius: 20px;
+}
+
+#input {
+    padding: 4px 20px;
+    margin: 4px;
+    color: white;
+    font-weight: bold;
+    background-color: @backgroundSecondary;
+    border-radius: 20px;
+    margin: 10px 13px;
+    margin-bottom: 2px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#input:focus {
+    border: 1px solid @selected;
+    margin-bottom: 0px;
+    outline: none;
+}
+
+
+#scroll {
+    margin-top: 5px;
+    margin: 15px;
+    border: none;
+}
+
+#img{
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding:2px;
+    background-color: transparent;
+}
+
+#text {
+    color: @textMain;
+    margin-left : 10px;
+}
+
+#text:selected {
+    color: @selected;
+    margin-left : 10px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+#entry {
+    margin:3px 5px ;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 3px 10px; 
+}
+
+#entry:selected {
+    border-radius: 25px;
+    border: 1px solid @selected;
+    outline: none;
+    box-shadow: none;
+        background-color: transparent;
+
+}

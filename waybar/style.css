@@ -1,0 +1,88 @@
+@import url("/home/adam/.cache/wal/colors-waybar.css");
+@define-color backgroundlight @color5;
+@define-color backgrounddark @background;
+@define-color workspacesbackground1 @color0;
+@define-color workspacesbackground2 @color1;
+@define-color bordercolor red;
+@define-color textcolor1 @foreground;
+@define-color textcolor2 @foreground;
+@define-color textcolor3 @color5;
+@define-color iconcolor @color6;
+
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    font-size: 14px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#window {
+    background: @backgroundlight;
+    border-radius: 25px;
+    color:@backgrounddark;
+    font-weight:bold;
+    margin: 6px;
+    padding: 2px 7px;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces {
+    border-radius: 25px;
+    background-color: @foreground;    
+    padding: 3px;
+    margin: 3px;
+
+}
+
+#workspaces button {
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    background-color: @workspacesbackground1;
+    margin: 0px 2px;
+
+}
+
+#workspaces button.active {
+    background-color: @workspacesbackground2;
+    border-radius: 25px;
+    min-width: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+}
+ 
+
+#custom-appmenu{
+    background: @backgrounddark;
+    font-weight:bold;
+    font-size: 20px;
+    padding: 1px 11px 3px 7px;
+    border-radius: 50%;
+    margin: 0px;
+    color:@backgroundlight;
+}
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+
+
+window#waybar.empty #window {
+    background-color:transparent;
+}
